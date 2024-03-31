@@ -1,0 +1,967 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+
+}
+
+a:hover {
+  color: #ddd;
+}
+
+/* Header or Navbar */
+header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.nav-logo img {
+  margin-top: 10px;
+  width: 128px;
+}
+.sn{
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #fff;
+    color: black;
+    height: 30px;
+    width: 65px;
+}
+.book{
+    color: red;
+    margin-left: -175%;
+}
+button{
+    background-color:#0a0a23;
+    color: #fff;
+  
+    border-radius:10px; 
+    padding:10px;
+    
+}
+
+.address .map-icon {
+  display: flex;
+  align-items: left;
+}
+
+
+
+.select-search {
+  background: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 420px;
+    width: 70%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+  }
+  
+  .search-input {
+    max-width: 600px;
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+  }
+  
+  .search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #000;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-left: 0.01px solid #ccc; 
+  }
+  
+
+
+#down{
+    margin-left: 20%;
+}
+
+.banner {
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+.banner-content {
+  margin: 0 auto;
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel {
+  
+    align-items: center;
+    
+  }
+  .sign-in {
+    display: block;
+    text-align: center; /* Center the content horizontally */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 1px;
+    font-size: 13px;
+  }
+  
+  
+    
+
+
+.links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.links a {
+  padding: 10px 0;
+}
+
+section img{
+    width: 80%;
+    height: auto;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+  .centered h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+  }
+  .centered h6{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+  .bottom-left {
+    position: absolute;
+    top: 83%;
+    left: 220px;
+    color: #fff;
+  }
+  
+  .bottom-left1 {
+    position: absolute;
+    top: 160%;
+    left: 220px;
+    color: #000;
+  }
+
+
+
+
+/* CSS for the scrolling wrapper */
+.scrolling-wrapper {
+    position: relative;
+    margin-left: 60%; /* Adjust the left margin */
+    margin-top: -7%;
+    transform: translateX(-50%);
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+}
+
+/* CSS for the card */
+.card {
+    display: inline-block; /* Display cards horizontally */
+    width: 350px; /* Adjust card width as needed */
+    height: 200px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards as needed */
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    position: relative;
+}
+
+.card-content {
+    position: relative;
+    height: 100%; /* Make the container take up the full height of the card */
+}
+
+.bottom-content {
+    position: absolute;
+    bottom: -90%;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    /* Example background color */
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+.bottom-content1 {
+    position: absolute;
+    bottom: -90%;
+    right:20%;
+    color: #fff;
+    font-size: 7px;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box;
+}
+.scrolling-wrapper::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.scrolling-wrapper1::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrapper1 {
+    position: relative;
+    margin-left: 60%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: 7%;
+}
+
+.card2 {
+    width: 250px; /* Set a fixed width for each card */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+.card2-content {
+    width: calc(33.33% 40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust margin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+}
+
+
+.card2-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card2-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.card2-details h4,
+.card2-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.card2-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+
+.scrolling-wrapper2-1{
+    position: relative;
+    margin-left: 70%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: -40%;
+}
+
+.card2-1 {
+    width: 250px; /* Set a fixed width for each card */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 7%;
+}
+
+
+.card2-1-content {
+    width: calc(33.33% 40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust margin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+}
+
+
+.card2-1-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card2-1-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.card2-1-details h4,
+.card2-1-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.card2-1-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+.scrolling-wrapper3-1{
+    position: relative;
+    margin-left: 80%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: -45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2nd row*/
+
+.scrolling-wrappertwo::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrappertwo {
+    position: relative;
+    margin-left: 60%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: 7%;
+}
+
+
+
+.cardt {
+    width: 250px; /* Set a fixed width for each card */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    
+}
+
+
+.cardt-content {
+    width: calc(33.33% 40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust margin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+}
+
+
+.cardt-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
+.cardt-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.cardt-details h4,
+.cardt-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.cardt-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+
+
+
+.card2-2 {
+    width: 250px; /* Adjust card width as needed */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 7%; /* Remove top margin to align with other cards in the row */
+    float: left; /* Float the cards to the left */
+}
+
+
+.card2-2-content {
+    width: calc(33.33% 40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust margin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+}
+
+
+.card2-2-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.card2-2-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.card2-2-details h4,
+.card2-2-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.card2-2-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+.scrolling-wrappertwo2::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.scrolling-wrappertwo2 {
+    position: relative;
+    margin-left: 70%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: none; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: -40%;
+}
+
+
+.scrolling-wrappertwo3::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrappertwo3{
+    position: absolute;
+    margin-left: 95%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: none; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 100%; /* Set the width of the scrolling wrapper */
+    margin-bottom: 25%;
+}
+
+
+.cardtt{
+    display: block; /* Display cards vertically */
+    max-width: 70%;
+    max-height: 90%;
+    width: calc(33.33% - 10px); /* Adjust card width for three cards in one row */
+    height: 300px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    margin-bottom: 50px; /* Adjust margin between rows */
+    margin-top: 5%;
+    transition: none; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+.cardtt-content {
+    width: calc(33.33% 50px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust ma0rgin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+    padding: 0;
+}
+
+
+.cardtt-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cardtt-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.cardtt-details h4,
+.cardtt-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.cardtt-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+
+
+
+
+
+/* 3rd row*/
+
+
+.scrolling-wrapperth::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrapperth{
+    position: absolute;
+    margin-left: 72%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: none; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 100%; /* Set the width of the scrolling wrapper */
+    margin-bottom: 25%;
+}
+
+
+.cardttt{
+    width: 250px; /* Adjust card width as needed */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 7%; /* Remove top margin to align with other cards in the row */
+    float: left; /* Float the cards to the left */
+}
+.cardttt-content {
+    width: calc(33.33% -40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust ma0rgin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+    padding: 0;
+}
+
+
+.cardttt-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cardttt-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.cardttt-details h4,
+.cardttt-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.cardttt-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+
+
+.scrolling-wrapperth2::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrapperth2{
+    position: absolute;
+    margin-left: 75%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: none; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 100%; /* Set the width of the scrolling wrapper */
+    margin-bottom: 25%;
+}
+
+.cardth2{
+    width: 250px; /* Adjust card width as needed */
+    height: 320px; /* Adjust card height as needed */
+    margin-right: 10px; /* Adjust margin between cards */
+    
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 7%; /* Remove top margin to align with other cards in the row */
+    float: left; /* Float the cards to the left */
+}
+.cardth2-content {
+    width: calc(33.33% -40px); /* Adjust card width for three cards in one row */
+    height: 320px; /* Adjust card height as needed */
+    margin: 0 10px 10px 0; /* Adjust ma0rgin between cards */
+    border: 1px solid white; /* White border */
+    overflow: hidden; /* Hide overflow content */
+    position: relative; /* Position relative for absolute positioning inside */
+    border-radius: 8px; /* Border radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for card */
+    padding: 0;
+}
+
+
+.cardth2-content img {
+    width: 100%; /* Make image fill the card */
+    height: 80%; /* Half the height for image */
+    object-fit: cover; /* Cover the entire space */
+    display: block; /* Make image a block element */
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.cardth2-details {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.cardth2-details h4,
+.cardth2-details p {
+    margin: 0; /* Remove default margins */
+    font-size: 12px; /* Adjust font size as needed */
+}
+
+.cardth2-details .bottom-right {
+    position: absolute;
+    bottom: 0; /* Align to the bottom */
+    right: -90%; /* Align to the right */
+    width: 50%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    color: #000;
+    padding: 10px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in width */
+    text-align: right; /* Align text to the right */
+}
+
+
+
+
+
+
+.scrolling-wrapperth3::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrapperth3{
+    position: absolute;
+    margin-left: 75%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: none; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 100%; /* Set the width of the scrolling wrapper */
+    margin-bottom: 25%;
+}
+
+
+.scrolling-wrappertwoo::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+.scrolling-wrappertwoo {
+    position: relative;
+    margin-left: -60%; /* Adjust the left margin */
+    transform: translateX(-50%);
+    overflow-x: hidden; /* Enable horizontal scrolling */
+    overflow-y: auto; /* Hide vertical scrollbar */
+    white-space: nowrap;
+    transition: transform 0.3s ease; /* Add smooth transition for transform */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    width: 75%; /* Set the width of the scrolling wrapper */
+    margin-top: 32%;
+}
+
+#l{
+    width: 2px;
+    height: 3px;
+}
+/* Add a media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust the text above the banner image */
+    .centered h3 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    
+    .centered h6 {
+      font-size: 10px; /* Adjust font size for smaller screens */
+    }
+  
+    /* Adjust the card styles */
+    .card {
+      width: 100%; /* Set cards to full width */
+      margin-bottom: 20px; /* Add margin between cards */
+    }
+  
+    .card-content,
+    .cardt-content,
+    .card2-content,
+    .card2-1-content,
+    .card2-2-content,
+    .cardtt-content,
+    .cardttt-content,
+    .cardth2-content {
+      height: auto; /* Set card content height to auto */
+    }
+  
+    .card2,
+    .card2-1,
+    .card2-2,
+    .cardt,
+    .cardtt,
+    .cardttt,
+    .cardth2 {
+      width: 100%; /* Set cards to full width */
+      height: auto; /* Set card height to auto */
+    }
+  
+    .bottom-content,
+    .bottom-content1 {
+      font-size: 8px; /* Adjust font size for smaller screens */
+    }
+  
+    .card2-details,
+    .card2-1-details,
+    .card2-2-details,
+    .cardt-details,
+    .cardtt-details,
+    .cardttt-details,
+    .cardth2-details {
+      width: 100%; /* Set card details width to full */
+    }
+  
+    .card2-2-details .bottom-right {
+      right: 0; /* Adjust the position of the bottom-right text */
+    }
+  }
+  
