@@ -220,7 +220,7 @@ section img{
 .scrolling-wrapper {
     position: relative;
     margin-left: 60%; /* Adjust the left margin */
-    margin-top: -7%;
+    margin-top: -10%;
     transform: translateX(-50%);
     overflow-x: auto; /* Enable horizontal scrolling */
     overflow-y: hidden; /* Hide vertical scrollbar */
@@ -234,7 +234,7 @@ section img{
 .card {
     display: inline-block; /* Display cards horizontally */
     width: 350px; /* Adjust card width as needed */
-    height: 200px; /* Adjust card height as needed */
+    height: 190px; /* Adjust card height as needed */
     margin-right: 10px; /* Adjust margin between cards as needed */
     transition: transform 0.3s ease; /* Add smooth transition for transform */
     position: relative;
