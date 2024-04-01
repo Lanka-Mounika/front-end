@@ -24,7 +24,10 @@ JS: Directory to store additional JavaScript files if needed for organizing scri
 Images: Directory to store additional images used in the project.
 # Getting Started
 # 1. Clone the repository
+https://github.com/Lanka-Mounika/front-end
 # 2. Requirements
+The project is created using Html,Css with Visual Studio. I recommend using Vs Code is User freindly . If you  don't have it, you can install through : https://code.visualstudio.com/docs/?dv=win64user
 # Run
+With all requirements installed and cloned repo, run vs code in the directory of the project. Then you can work on the particular pages.
 # License
   MIT
